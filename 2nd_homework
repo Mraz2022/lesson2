@@ -1,0 +1,16 @@
+class Dog:
+    def __init__(self, poroda, age, weight):
+        self.age = age
+        self.weight = weight
+        self.poroda = poroda
+class AboutDog:
+    def __init__(self):
+        self.list = []
+    def add_dog(self, poroda, age, weight):
+        dog = Dog(poroda, age, weight)
+        self.list.append(dog)
+        print('About dog ' + poroda + ' ' +  str(age) + ' ' + str(weight) )
+        return
+about = AboutDog()
+about.add_dog('Ovcharka ', 12, 25)
+about.add_dog('Pudel ', 11, 15)
